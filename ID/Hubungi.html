@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		.contact-container {
+	background-image: url(Img/images.jpg);
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  animation-name: moveContact;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.contact-container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  position: relative;
+  animation-name: moveName;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.contact-container p {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.contact-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.contact-container ul li {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.contact-container ul li:before {
+  content: "\2022";
+  color: #ff6b6b;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.contact-container a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-container a:hover {
+  background-color: #2980b9;
+}
+
+body {
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(Img/Galaxy.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+@keyframes moveContact {
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+
+@keyframes moveName {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+	</style>
+	<title>Hubungi</title>
+</head>
+<body>
+	 <div class="contact-container">
+    <h1>Hubungi Saya</h1>
+    <p>Silakan hubungi Saya melalui informasi kontak berikut:</p>
+    <ul>
+      <li>Email:ebby.wanted11@gmail.com</li>
+      <li>Telepon: +67074414504</li>
+      <li>Alamat:Tasi-Tolu. DILI, Timor-Leste</li>
+       <li>Facebook: <a href="https://www.facebook.com/ebbyl.rodrigues10@gmail.com">Gaming Samuel</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>

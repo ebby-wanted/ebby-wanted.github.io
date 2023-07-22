@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gaming Samuel</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style type="text/css">
+ #particles-js {
+      width: 100%;
+      height: 100vh;
+      background-color: #000000;
+      position: absolute;
+    }
+ .profile-card {
+  background-image: url("Img/kalan.jpg");
+  width: 300px;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  position: relative;
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  color: skyblue; /* Mengubah warna teks menjadi hitam */
+}
+
+.profile-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #ffffff;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.profile-card h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  position: relative;
+  animation-name: moveName;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.profile-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.profile-card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.profile-card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.profile-card .btn:hover {
+  background-color: #2980b9;
+}
+
+body {
+  background-image: url("Img/Gstars.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}
+
+@keyframes moveName {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+  </style>
+</head>
+<body>
+ <div id="particles-js"></div>
+  <div class="profile-card">
+    <img src="Img/samuel.jpeg" alt="Foto Profil">
+    <h1>Febrianos Samuel</h1>
+    <h2>Mahasiswa</h2>
+    <p>Nama saya adalah Febrianos Fatima de Sousa Samuel,saya lahir di Dili dan sekaran saya tinggal di Tasi-Tolu.</p>
+    <a href="hubungi.html" class="btn">Hubungi</a>
+    
+  </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      // Konfigurasi Particles.js
+    });
+  </script>
+</body>
+</html>
