@@ -1,158 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SamuelWeb</title>
-	<link rel="stylesheet" type="text/css" href="style2.css">
+  <title>Gaming Samuel</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style type="text/css">
+ #particles-js {
+      width: 100%;
+      height: 100vh;
+      background-color: #000000;
+      position: absolute;
+    }
+ .profile-card {
+  background-image: url("Img/kalan.jpg");
+  width: 300px;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  position: relative;
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  color: skyblue; /* Mengubah warna teks menjadi hitam */
+}
+
+.profile-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #ffffff;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.profile-card h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  position: relative;
+  animation-name: moveName;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.profile-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.profile-card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.profile-card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.profile-card .btn:hover {
+  background-color: #2980b9;
+}
+
+body {
+  background-image: url("Img/Gstars.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}
+
+@keyframes moveName {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+  </style>
 </head>
 <body>
-	<div class="box-header">
-		<header>
-			<label for="menu">&#9776;</label>
-			<input type="checkbox" name="menu" id="menu">
-			<img src="image/Samuel.png" class="myimgs">
-			<ul>
-				<li>
-					<a href="./index.html">Home</a>
-				</li>
-				<li>
-					<a href="./perfil.html">Perfil</a>
-				</li>
-				<li>
-					<a href="./history.html">Historia</a>
-				</li>
-				<li class="menu-image">
-					<a href="#">Imagen</a>
-					<ul class="submenu-image">
-						<li><a href="./gallery-family.html">Imagen Familia</a></li>
-						<li><a href="./gallery-kolega.html">Imagen Kolega</a></li>
-						<li><a href="./gallery-grupu.html">Imagen Groupu</a></li>
-					</ul>
-				</li>
-			</ul> 
-		</header>
-	</div>
-	<div class="box-img-header">
-		<div class="textu">
-			<h1>Bemvindo</h1>
-			<p>Website pratika Materia Desenho Web-I, Klase Tekonika Informatika</p>
-		</div>
-	</div>
-
-
-	<section class="box-info">
-		<marquee behavior="" direction="" onmouseover="this.stop()" onmouseout="this.start()">
-			<a href="#">Informasaun Registrasaun Membru foun</a> |
-			<a href="#">Informasaun Registrasaun Membru foun</a> |
-			<a href="#">Informasaun Registrasaun Membru foun</a> |
-			<a href="#">Informasaun Registrasaun Membru foun</a> 
-		</marquee>
-	</section>
-
-	<section class="showcase">
-		<div class="showcase-img">
-			<figure>
-				<img src="image/Ebby7.jpg" alt="">
-			</figure>
-		</div>
-		<div class="showcase-text">
-			<h1>Momento iha SMA CPS</h1>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quos velit, laboriosam ullam officiis obcaecati dolorum. Sunt a cupiditate enim nam, expedita sapiente aperiam? Doloribus illum ratione porro laboriosam perspiciatis voluptatibus et dicta, voluptate quae aliquid. Quidem voluptas assumenda nisi, minima facere omnis vitae quis, sapiente doloremque? Amet, tenetur, at.
-			</p>
-		</div>
-	</section>
-
-	<section class="showcase">
-		<div class="showcase-img">
-			<figure>
-				<img src="image/Ebby8.jpg" alt="">
-			</figure>
-		</div>
-		<div class="showcase-text">
-			<h1>Momento iha IOB</h1>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quos velit, laboriosam ullam officiis obcaecati dolorum. Sunt a cupiditate enim nam, expedita sapiente aperiam? Doloribus illum ratione porro laboriosam perspiciatis voluptatibus et dicta, voluptate quae aliquid. Quidem voluptas assumenda nisi, minima facere omnis vitae quis, sapiente doloremque? Amet, tenetur, at.
-			</p>
-		</div>
-	</section>
-
-	<section class="showcase">
-		<div class="showcase-img">
-			<figure>
-				<img src="image/Ebby5.jpg" alt="">
-			</figure>
-		</div>
-		<div class="showcase-text">
-			<h1>Momento iha CPS Selebra</h1>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quos velit, laboriosam ullam officiis obcaecati dolorum. Sunt a cupiditate enim nam, expedita sapiente aperiam? Doloribus illum ratione porro laboriosam perspiciatis voluptatibus et dicta, voluptate quae aliquid. Quidem voluptas assumenda nisi, minima facere omnis vitae quis, sapiente doloremque? Amet, tenetur, at.
-			</p>
-		</div>
-	</section>
-
-	<section class="showcase">
-		<div class="showcase-img">
-			<figure>
-				<img src="image/Ebby10.jpg" alt="">
-			</figure>
-		</div>
-		<div class="showcase-text">
-			<h1>Hasai iha Kampus IOB</h1>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quos velit, laboriosam ullam officiis obcaecati dolorum. Sunt a cupiditate enim nam, expedita sapiente aperiam? Doloribus illum ratione porro laboriosam perspiciatis voluptatibus et dicta, voluptate quae aliquid. Quidem voluptas assumenda nisi, minima facere omnis vitae quis, sapiente doloremque? Amet, tenetur, at.
-			</p>
-		</div>
-	</section>
-
-
-	<section class="blog">
-		<header>
-			<h1>Informasaun Seluk ne'ebe iha</h1>
-			<hr>
-			<p>Informasaun Adisional ne'ebe iha</p>
-		</header>
-		<div class="body">
-			<div class="box-blog">
-				<div class="box-img">
-					<figure>
-						<img src="image/Ebby11.jpg" alt="some image">
-					</figure>
-				</div>
-				<div class="box-text">
-					<h1>Foto momentu iha sala laran IOB</h1>
-					<p>Imagen ne'ebe utiliza ba lista blog ne'ebe iha.</p>
-				</div>
-			</div>
-
-			<div class="box-blog">
-				<div class="box-img">
-					<figure>
-						<img src="image/Ebby15.jpg" alt="some image">
-					</figure>
-				</div>
-				<div class="box-text">
-					<h1>Foto momentu atu apresenta</h1>
-					<p>Imagen ne'ebe utiliza ba lista blog ne'ebe iha.</p>
-				</div>
-			</div>
-
-			<div class="box-blog">
-				<div class="box-img">
-					<figure>
-						<img src="image/Ebby15.jpg" alt="some image">
-					</figure>
-				</div>
-				<div class="box-text">
-					<h1>Foto momentu atu apresenta2</h1>
-					<p>Imagen ne'ebe utiliza ba lista blog ne'ebe iha.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<footer>
-		<p>&copy; 2022. Built by Samuel&reg;</p>
-	</footer>
-
+ <div id="particles-js"></div>
+  <div class="profile-card">
+    <img src="Img/samuel.jpeg" alt="Foto Profil">
+    <h1>Febrianos Samuel</h1>
+    <h2>Mahasiswa</h2>
+    <p>Nama saya adalah Febrianos Fatima de Sousa Samuel,saya lahir di Dili dan sekaran saya tinggal di Tasi-Tolu.</p>
+    <a href="hubungi.html" class="btn">Hubungi</a>
+    
+  </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      // Konfigurasi Particles.js
+    });
+  </script>
 </body>
 </html>
